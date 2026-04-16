@@ -44,16 +44,23 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
     e.preventDefault();
 
     const lines = [
-      `*Enquiry from MakeMyMoment.in*`,
+      `✨ *New Booking Enquiry* ✨`,
+      `━━━━━━━━━━━━━━━━━━`,
       ``,
-      `*Name:* ${name}`,
-      `*Partner's Name:* ${partnerName}`,
-      `*Phone:* ${phone}`,
-      `*City:* ${city?.name || selectedCity}`,
-      selectedPackage ? `*Package:* ${selectedPackage}` : "",
-      `*Occasion:* ${occasion}`,
-      `*Date:* ${date}`,
-      `*Time Slot:* ${time}`,
+      `👤 *Name:* ${name}`,
+      `💑 *Partner:* ${partnerName}`,
+      `📞 *Phone:* ${phone}`,
+      ``,
+      `📍 *City:* ${city?.name || selectedCity}`,
+      `🏛️ *Venue:* ${city?.venue.name || ""}`,
+      selectedPackage ? `📦 *Package:* ${selectedPackage}` : "",
+      ``,
+      `🎉 *Occasion:* ${occasion}`,
+      `📅 *Date:* ${date}`,
+      `⏰ *Time Slot:* ${time}`,
+      ``,
+      `━━━━━━━━━━━━━━━━━━`,
+      `_via BookMyMoment.in_`,
     ]
       .filter(Boolean)
       .join("\n");
@@ -69,7 +76,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
         <div className="text-center pb-2">
           <div className="inline-flex items-center gap-2 text-primary mb-1">
             <Heart className="w-4 h-4" />
-            <span className="text-xs font-semibold uppercase tracking-widest">Reserve Your Moment</span>
+            <span className="text-xs font-semibold uppercase tracking-widest">Reserve Your Event</span>
           </div>
           <p className="text-xs text-zinc-500">Fill in details &amp; we&apos;ll contact you on WhatsApp</p>
         </div>
@@ -163,7 +170,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
           >
             <option value="" disabled>
-              Your Moment *
+              Your Event *
             </option>
             {occasions.map((o) => (
               <option key={o} value={o}>

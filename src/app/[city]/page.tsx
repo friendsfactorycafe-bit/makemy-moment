@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const city = getCityBySlug(citySlug);
   if (!city) return {};
   return {
-    title: `${city.venue.name} — Romantic Celebrations in ${city.name} | MakeMyMoment.in`,
+    title: `${city.venue.name} — Romantic Celebrations in ${city.name} | BookMyMoment.in`,
     description: `Book private romantic celebrations at ${city.venue.name} in ${city.name}. ${city.venue.packages.length} exclusive packages starting from ₹${Math.min(...city.venue.packages.map((p) => p.price)).toLocaleString("en-IN")}`,
   };
 }

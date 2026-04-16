@@ -14,10 +14,10 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-sm">
-                M
+                B
               </div>
               <span className="text-lg font-bold text-white">
-                MakeMyMoment<span className="text-primary">.in</span>
+                BookMyMoment<span className="text-primary">.in</span>
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            © {new Date().getFullYear()} MakeMyMoment.in — All rights reserved.
+            © {new Date().getFullYear()} BookMyMoment.in — All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="text-xs text-muted hover:text-white transition-colors">

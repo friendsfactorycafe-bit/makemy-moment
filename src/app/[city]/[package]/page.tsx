@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const pkg = getPackageBySlug(citySlug, pkgSlug);
   if (!city || !pkg) return {};
   return {
-    title: `${pkg.name} — ₹${pkg.price.toLocaleString("en-IN")} | ${city.venue.name}, ${city.name} | MakeMyMoment.in`,
+    title: `${pkg.name} — ₹${pkg.price.toLocaleString("en-IN")} | ${city.venue.name}, ${city.name} | BookMyMoment.in`,
     description: `${pkg.description}. Book the ${pkg.name} package at ${city.venue.name} in ${city.name}. Starting at ₹${pkg.price.toLocaleString("en-IN")}.`,
   };
 }

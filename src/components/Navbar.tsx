@@ -28,10 +28,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">
-            M
+            B
           </div>
           <span className="text-base font-semibold text-white tracking-tight">
-            MakeMyMoment<span className="text-primary">.in</span>
+            BookMyMoment<span className="text-primary">.in</span>
           </span>
         </Link>
 

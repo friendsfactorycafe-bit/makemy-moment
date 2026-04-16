@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MakeMyMoment.in — Premium Romantic Celebrations Across India",
+  title: "BookMyMoment.in — Premium Romantic Celebrations Across India",
   description:
     "Book private romantic celebrations, candlelight dinners, birthday surprises, proposals & anniversary setups in Vadodara, Surat & more cities across India.",
   icons: {

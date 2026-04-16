@@ -86,10 +86,10 @@ export default function HomePage() {
                 transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08]"
               >
-                <span className="text-white">Make Every</span>
+                <span className="text-white">Book My</span>
                 <br />
                 <span className="gradient-text">Moment</span>{" "}
-                <span className="text-white">Magical</span>
+                <span className="text-white">Perfectly</span>
               </motion.h1>
 
               <motion.p
@@ -251,14 +251,14 @@ export default function HomePage() {
             {cities.map((city) => (
               <motion.div key={city.slug} variants={fadeUp}>
                 <Link href={`/${city.slug}`} className="group block">
-                  <div className="relative rounded-3xl overflow-hidden glass card-hover">
-                    <div className="relative h-64 overflow-hidden">
+                  <div className="relative rounded-3xl overflow-hidden bg-surface-light border border-white/10 card-hover shadow-lg shadow-black/30 hover:border-primary/30 transition-colors duration-300">
+                    <div className="relative h-72 overflow-hidden">
                       <img
                         src={city.venue.heroImage}
                         alt={`${city.venue.name} - ${city.name}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/50 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-surface-light via-surface-light/60 to-transparent" />
                       <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full glass text-xs text-white font-medium">
                         <MapPin className="w-3 h-3 text-primary" />
                         {city.name}, {city.state}
@@ -368,7 +368,7 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <motion.p variants={fadeUp} className="text-sm text-primary font-medium uppercase tracking-wider mb-3">
-              Why MakeMyMoment
+              Why BookMyMoment
             </motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               Built for Unforgettable Moments
