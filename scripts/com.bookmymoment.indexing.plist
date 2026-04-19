@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.bookmymoment.indexing</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/npx</string>
+        <string>tsx</string>
+        <string>/Applications/CAFE BUSINESS ALL WEBSITES/makemymoment/scripts/submit-urls.ts</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Applications/CAFE BUSINESS ALL WEBSITES/makemymoment</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Applications/CAFE BUSINESS ALL WEBSITES/makemymoment/scripts/indexing.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Applications/CAFE BUSINESS ALL WEBSITES/makemymoment/scripts/indexing.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+    </dict>
+</dict>
+</plist>
