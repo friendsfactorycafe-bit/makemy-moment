@@ -259,8 +259,8 @@ export default function HomePage() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-surface-light via-surface-light/60 to-transparent" />
-                      <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full glass text-xs text-white font-medium">
-                        <MapPin className="w-3 h-3 text-primary" />
+                      <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-600/90 backdrop-blur-sm text-xs text-white font-medium">
+                        <MapPin className="w-3 h-3 text-white" />
                         {city.name}, {city.state}
                       </div>
                       <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur text-xs text-white">

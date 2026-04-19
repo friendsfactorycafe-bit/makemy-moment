@@ -70,8 +70,8 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
-      <div className="bg-surface border border-border rounded-2xl p-6 space-y-4">
+    <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto overflow-hidden">
+      <div className="bg-surface border border-border rounded-2xl p-4 sm:p-6 space-y-4 overflow-hidden">
         {/* Header */}
         <div className="text-center pb-2">
           <div className="inline-flex items-center gap-2 text-primary mb-1">
@@ -90,7 +90,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             placeholder="Your Name *"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
           />
         </div>
 
@@ -103,7 +103,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             placeholder="Partner's Name *"
             value={partnerName}
             onChange={(e) => setPartnerName(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             placeholder="Phone Number *"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors"
           />
         </div>
 
@@ -130,7 +130,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
               setSelectedCity(e.target.value);
               setSelectedPackage("");
             }}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
           >
             <option value="" disabled>
               City *
@@ -149,7 +149,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
           <select
             value={selectedPackage}
             onChange={(e) => setSelectedPackage(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
           >
             <option value="">Select Package</option>
             {city?.venue.packages.map((p) => (
@@ -167,7 +167,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             required
             value={occasion}
             onChange={(e) => setOccasion(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
           >
             <option value="" disabled>
               Your Event *
@@ -188,7 +188,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             required
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [color-scheme:dark]"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [color-scheme:dark] [&::-webkit-calendar-picker-indicator]:opacity-100 [&::-webkit-calendar-picker-indicator]:cursor-pointer"
           />
         </div>
 
@@ -199,7 +199,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
             required
             value={time}
             onChange={(e) => setTime(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
+            className="w-full min-w-0 max-w-full pl-10 pr-4 py-3 bg-white/5 border border-border rounded-xl text-sm text-white appearance-none focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/25 transition-colors [&>option]:bg-surface [&>option]:text-white"
           >
             <option value="" disabled>
               Preferred Time *

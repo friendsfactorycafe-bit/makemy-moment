@@ -100,6 +100,144 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* SEO Keywords — Vadodara */}
+        <div className="border-t border-white/5 pt-8 mb-8">
+          <h4 className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-4">
+            Popular Searches in Vadodara
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Candlelight Dinner Vadodara",
+              "Birthday Surprise Vadodara",
+              "Anniversary Celebration Vadodara",
+              "Proposal Setup Vadodara",
+              "Surprise Date Vadodara",
+              "Romantic Dinner Vadodara",
+              "Private Dinner Vadodara",
+              "Couple Dinner Vadodara",
+              "Dinner Date Vadodara",
+              "Rooftop Dinner Vadodara",
+              "Glass House Dinner Vadodara",
+              "Valentine Dinner Vadodara",
+              "Pre Wedding Shoot Vadodara",
+              "Baby Shower Vadodara",
+              "Date Night Vadodara",
+              "Birthday Decoration Vadodara",
+              "Anniversary Decoration Vadodara",
+              "Proposal Decoration Vadodara",
+              "Romantic Setup Vadodara",
+              "Surprise Setup Vadodara",
+              "Candle Light Dinner Vadodara",
+              "Private Dining Vadodara",
+              "Romantic Places Vadodara",
+              "Couple Places Vadodara",
+              "Birthday Venue Vadodara",
+              "Anniversary Venue Vadodara",
+              "Proposal Venue Vadodara",
+              "Romantic Cafe Vadodara",
+              "Rooftop Cafe Vadodara",
+              "Glass House Cafe Vadodara",
+              "Friends Factory Cafe Vadodara",
+              "Midnight Birthday Surprise Vadodara",
+              "Midnight Celebration Vadodara",
+              "Romantic Experience Vadodara",
+              "Couple Date Ideas Vadodara",
+              "Birthday Party Vadodara",
+              "Anniversary Party Vadodara",
+              "Private Celebration Vadodara",
+              "Romantic Surprise Vadodara",
+              "Surprise Decoration Vadodara",
+              "Balloon Decoration Vadodara",
+              "Flower Decoration Vadodara",
+              "Engagement Setup Vadodara",
+              "Couple Photoshoot Vadodara",
+              "Valentine Celebration Vadodara",
+              "Wedding Anniversary Vadodara",
+              "Marriage Anniversary Vadodara",
+              "BookMyMoment Vadodara",
+              "Celebration Place Vadodara",
+              "Date Ideas Vadodara",
+            ].map((kw) => (
+              <Link
+                key={kw}
+                href={`/vadodara`}
+                className="text-[11px] text-white/25 hover:text-white/50 transition-colors"
+              >
+                {kw}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* SEO Keywords — Surat */}
+        <div className="border-t border-white/5 pt-8 mb-8">
+          <h4 className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-4">
+            Popular Searches in Surat
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Candlelight Dinner Surat",
+              "Birthday Surprise Surat",
+              "Anniversary Celebration Surat",
+              "Proposal Setup Surat",
+              "Surprise Date Surat",
+              "Romantic Dinner Surat",
+              "Private Dinner Surat",
+              "Couple Dinner Surat",
+              "Dinner Date Surat",
+              "Themed Celebration Surat",
+              "Indoor Celebration Surat",
+              "Valentine Dinner Surat",
+              "Pre Wedding Shoot Surat",
+              "Baby Shower Surat",
+              "Date Night Surat",
+              "Birthday Decoration Surat",
+              "Anniversary Decoration Surat",
+              "Proposal Decoration Surat",
+              "Romantic Setup Surat",
+              "Surprise Setup Surat",
+              "Candle Light Dinner Surat",
+              "Private Dining Surat",
+              "Romantic Places Surat",
+              "Couple Places Surat",
+              "Birthday Venue Surat",
+              "Anniversary Venue Surat",
+              "Proposal Venue Surat",
+              "Romantic Cafe Surat",
+              "Swing Setup Surat",
+              "Boho Celebration Surat",
+              "HIVY Surat",
+              "Fairy Tale Proposal Surat",
+              "Tent of Romance Surat",
+              "Midnight Birthday Surprise Surat",
+              "Midnight Celebration Surat",
+              "Romantic Experience Surat",
+              "Couple Date Ideas Surat",
+              "Birthday Party Surat",
+              "Anniversary Party Surat",
+              "Private Celebration Surat",
+              "Romantic Surprise Surat",
+              "Surprise Decoration Surat",
+              "Balloon Decoration Surat",
+              "Flower Decoration Surat",
+              "Engagement Setup Surat",
+              "Couple Photoshoot Surat",
+              "Valentine Celebration Surat",
+              "Wedding Anniversary Surat",
+              "BookMyMoment Surat",
+              "Celebration Place Surat",
+            ].map((kw) => (
+              <Link
+                key={kw}
+                href={`/surat`}
+                className="text-[11px] text-white/25 hover:text-white/50 transition-colors"
+              >
+                {kw}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">

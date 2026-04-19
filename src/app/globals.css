@@ -19,6 +19,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mobile-friendly form inputs */
+input, select, textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  min-height: 48px;
+}
+
+/* Prevent iOS zoom on input focus */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
