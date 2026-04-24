@@ -67,11 +67,22 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
-    apple: "/apple-icon.svg",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { rel: "mask-icon", url: "/icon.svg", color: "#e11d48" },
+    ],
   },
+  appleWebApp: {
+    title: "BookMyMoment",
+    statusBarStyle: "black-translucent",
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
